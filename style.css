@@ -1,0 +1,240 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/header-bg.jpg);
+    background-size:cover;
+    position: relative;
+}
+.navbar {
+    padding: 10px 200px;
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 22, 22);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+ .navbar .menu li a {
+    display: block;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+ }
+.t-box {
+    width: 90%;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5%;
+    text-align: center;
+}
+.button {
+    display: none;
+    background-color: rgb(253, 253, 171);
+    font-size: 20px;
+    margin-right: 400px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+}
+.t-box h1 {
+    font-size: 65px;
+}
+.t-box h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(245, 193, 3);
+    font-size: 20px;
+    padding: 15px 30px;
+    position: relative;
+}
+.btn:hover{
+    background-color: orange;
+}
+
+@media(max-width : 600px){
+    .t-box h1 {
+        font-size: 30px;
+    }
+    .t-box h3 {
+        font-size: 20px;
+    }
+    .navbar .menu li{
+        display: none;
+    }
+    nav .button{
+        display: block;
+    }
+}
+.services {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+.row {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: space-between;
+}
+
+@media (max-width : 1200px){
+    .row{
+        flex-direction: column;
+        }
+} 
+
+.PORTFOLD {
+    background-color: rgb(194, 193, 193);
+    text-align: center;
+    padding-top: 70px;
+}
+.p-col {
+    position: relative; 
+    background-color: white;
+}
+
+.plus {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.plus:hover{
+    background: rgb(255, 153, 0, 0.7);
+    
+}
+ @media (max-width : 1200px) {
+    .p-col{
+        flex-direction: row;
+        }
+}
+
+.team {
+    background-color: rgb(194, 193, 193);
+    text-align: center;
+    padding-top: 70px;
+    
+}
+
+.t-col {
+    position: relative;
+}
+
+
+.immg{
+    border-radius: 60px;
+}
+
+@media (max-width : 200px) {
+    .t-col{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .immg {
+        width: 200px;
+        border-radius: 50%;
+    }
+    
+    .a {
+        width: 17px;
+        display: flex;
+        flex-direction: row;
+    }  
+} 
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 30px;
+}
+@media  (max-width : 700px) {
+    .logo{
+        width: 100px;
+        margin-left: 0;
+        padding: 10px;
+        justify-content: space-between;
+    }
+}
+.contact {
+    padding-top: 40px;
+    min-height: 100vh;
+    width: 100%;
+     background-image: url(img/dotted-world-map-black-background-vector-illustration_541075-470.avif);
+    background-size:cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    justify-content: center;
+   
+}
+.con-col input  {
+    min-height: 12px;
+    width: 200%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+textarea{
+    min-height: 12px;
+    width: 140%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid red;
+    display: block;
+    margin-top: 10px;
+    margin-right: 300px;
+    
+}
+.label {
+    color: red;
+}
+@media (max-width : 600px) {
+    .con-col{
+        display: flex;
+        flex-direction: column;
+    
+    } 
+    .label {
+        display: none;}
+    .btn {
+        font-size: 15;
+        padding: 10px 20px;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
